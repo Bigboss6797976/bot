@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: uu-promo-bot
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: OFFICIAL_URL
+        sync: false
+      - key: APP_URL
+        sync: false
+      - key: MINI_APP_URL
+        sync: false
+      - key: CS_URL
+        sync: false
+      - key: AGENT_URL
+        sync: false
+      - key: GROUP_URL
+        sync: false
+      - key: CHANNEL_URL
+        sync: false
+      - key: BANNER_IMAGE
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
